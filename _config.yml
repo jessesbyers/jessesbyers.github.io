@@ -1,11 +1,11 @@
 # Site settings
 author: Jesse Byers
-title: 
+title: Code
 header-img: img/home-bg.png
 email: jesse.s.byers@gmail.com
 copyright_name: Jesse Byers
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Reflection on Challenges, and their Solutions
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  jessesbyers
