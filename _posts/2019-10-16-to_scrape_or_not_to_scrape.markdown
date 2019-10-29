@@ -1,14 +1,14 @@
 ---
 layout: post
 title:      "To Scrape, or Not to Scrape?"
-date:       2019-10-16 14:34:52 +0000
+date:       2019-10-16 10:34:53 -0400
 permalink:  to_scrape_or_not_to_scrape
 ---
 
 
 This week, I have been working on my first project, a CLI application. The goal is to build a CLI that allows users to make choices, then either scapes data from a website or an API and stores, manipulates, and presents that data.
 
-# **My Inspiration - The Tempestry Project**# 
+# **My Inspiration - The Tempestry Project**
 Given my science teaching background and goals, I wanted to create something that incorporated science data. I am also a knitter, and I decided to create a project that combined both of these interests. I had recently come across the [Tempestry Project](https://www.tempestryproject.com/), which combines climate data and fiber arts.
 
 > "A Tempestry is a wallhanging, or temperature tapestry, that represents the daily high temperature for a given year and location, with January at the bottom and December at the top – think of it like a bar graph.
@@ -20,7 +20,7 @@ Given my science teaching background and goals, I wanted to create something tha
 ![](https://i2.wp.com/www.tempestryproject.com/wp-content/uploads/2019/06/New-Normal-Kit-Pic.jpg?zoom=2&fit=900%2C2016&ssl=1)
 
 *You can read more about the Tempestry Project [here](https://www.tempestryproject.com/about/).*
-# **My Plan - Knitting Pattern Generator**# 
+# **My Plan - Knitting Pattern Generator**
 While the [Files](https://www.tempestryproject.com/files/) page on the Tempestry website gives detailed directions for creating a custom knitting pattern based on a given year and location, the process is complicated. Knitters must visit a search page, work through multiple menus, and are eventually emailed a spreadsheet of temperature data for their chosen year and location. They must then copy the data into a google sheets template to associate each yarn color with a given day's temperature. After collecting my own data in this way, I immediately realized that this process could be automated through a CLI application.
 
 My initial goal was to create a CLI application that would allow users to input a zip code and a year, and the application would automatically generate a knitting pattern in the form of a table. 
@@ -55,7 +55,7 @@ ________  2000-01-04   60 deg. F       Creme Brulee
 
 Each table row would represent a day during the chosen year, and the table columns would include that day's maximum temperature, and the associated yarn color representing that temperature. Temperature data would either be collected through an API, or scraped from a website. Using Object Oriented Ruby, I would create a Scraper class to create an object representing each day's data.
 
-# **My First Challenge - Historical Weather Data Access**# 
+# **My First Challenge - Historical Weather Data Access** 
 After setting up my file structure and gems for the project, I needed to figure out a source for my weather data. I thought this would be fairly easy, since current weather data and weekly forecasts are so easy to access! However, as it turns out, multi-day historical weather data is much more difficult to access. I tried out three different data sources, each with its own set of benefits and limitations.
 
 ***1. Weather Underground - Scraping***
@@ -136,7 +136,7 @@ def self.scrape_first_day
 
 When these methods were incorporated into my CLI, I was able to create a working application that generated and printed out a knitting pattern just as I had planned... until I started getting 429 Too Many Request errors. These errors would break my program after collecting anywhere from 40 to 120 days worth of data, out of the 365 that I needed. Ever after experimentation with looping and building in several seconds of sleep between each scrape, I was not able to resolve the problem.
 
-# **So...to scrape, or not to scrape?**# 
+# **So...to scrape, or not to scrape?** 
 That is the question. Having invested so much time into my CLI application, and having created a program that functions the way it was designed, part of me is tempted to continue figuring out how alter my code to get around the limits imposed by the websites I am trying to scrape. But another part of me is concerned about the ethics of scraping in general. I started exploring the issue of ethics, reading reflections by [Roberto Rocha](http://robertorocha.info/on-the-ethics-of-web-scraping/), a journalist who uses scraping  in his research and reporting, as well as [James Densmore](https://towardsdatascience.com/ethics-in-web-scraping-b96b18136f01), a data scientist and consultant.  Rocha offered a set of guiding questions around the ethics of scraping:
 
 > "Can I take this data?
