@@ -167,6 +167,19 @@ So, will I continue trying to work around my 429 error and scrape 365 different 
 
 However, it seems somewhat fitting that I have run into an ethical data access issue with this particular project. The Tempestry Project began around the same time as, and in response to, [fears of government climate change data being lost](https://www.tempestryproject.com/why-the-tempestry-project/) after the 2016 presidential election. As a middle school science teacher, I lost access to many of the climate teaching resources I had always used from sites such as the EPA or NOAA. If we are to continue raising awareness and action around our changing climate, we need free access to historical data. This project is showing that we are not there yet.
 
+**Want to check out my project to learn more?
+**
+
+For an update on the final project, read my next blog post: [CLI Project: Testing and Lessons Learned](https://jessesbyers.github.io/cli_project_testing_and_lessons_learned)
+
+
+[Explore the final project on gihub at this link](https://github.com/jessesbyers/climate_pattern_generator)
+
+* Use the **master branch** to see the full version (full year of data, taking 20 minutes to generate a knitting pattern)
+
+
+* Use the **demo branch** to see the demo version (see all features within a few seconds, with fewer days of data)
+
 
 
 
