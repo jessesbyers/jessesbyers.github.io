@@ -6,7 +6,7 @@ permalink:  cli_project_testing_and_lessons_learned
 ---
 
 
-*In my last blog post, "[To Scrape, or not to Scrape](https://jessesbyers.github.io/toscrapeornottoscrape)", I laid out the plan for my first Command Line Application project and the challenges I encountered in accessing daily weather data for an entire year. This post will update how the project has come together, and share some of the lessons learned from testing and troubleshooting the program.*
+*In my last blog post, "[To Scrape, or not to Scrape](https://jessesbyers.github.io/to_scrape_or_not_to_scrape)", I laid out the plan for my first Command Line Application project and the challenges I encountered in accessing daily weather data for an entire year. This post will update how the project has come together, and share some of the lessons learned from testing and troubleshooting the program.*
 
 [Explore the project on gihub at this link](https://github.com/jessesbyers/climate_pattern_generator/tree/master)
 
