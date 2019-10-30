@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "CLI Project: Testing and Lessons Learned"
-date:       2019-10-30 12:34:20 +0000
+date:       2019-10-30 08:34:21 -0400
 permalink:  cli_project_testing_and_lessons_learned
 ---
 
@@ -28,6 +28,12 @@ I successfully created a CLI application that would automatically generate a kni
 ![](https://i.imgur.com/V27seIY.png)
 
  **Create Knitting Pattern**: If the preview looks correct, the user can choose to generate a pattern for the entire year. This process takes approximately 20 minutes in the full version (master branch), since 365 separate URLs from the Old Farmer's Almanac Weather History Archive are scraped. Users can watch a YouTube video tutorial about the knitting project while they wait for their pattern to be generated and printed. *In the demo version (demo branch), this process takes only a few seconds and scrapes a smaller sample of data.*
+ 
+ ![](https://i.imgur.com/z0j7MQX.png)
+ 
+ ...
+ 
+ ![](https://i.imgur.com/Z0CfU4t.png)
 
 
 **Daily Weather Snapshot**: The user can choose any day from the year, and see a snapshot of temperature and precipitation data from that day.
@@ -107,8 +113,7 @@ The methods within these classes were fairly straightforward to set up initially
 
 # Takeaways and Lessons Learned
 
-*1. A CLI application only works if it can accommodate the extreme and irregular cases, not just the ordinary cases.
-*
+**1. A CLI application only works if it can accommodate the extreme and irregular cases, not just the ordinary cases.**
 
 I ran into a number of irregular conditions to account for in this project, and devised the following solutions:
 
@@ -146,8 +151,8 @@ def convert_temp
 ```
 
 
-*2. A program can break at any interaction point, and each problem may require a different custom error message or strategy.
-*
+**2. A program can break at any interaction point, and each problem may require a different custom error message or strategy.**
+
 
 Addressing possible break points and errors impacted the CLI class the most. My code needed to not only account for people inputting invalid menu choices, but also inputting invalid zip codes and years. After experimenting with various approaches, I found that the best solution was to use results of the Scraper class to uncover whether user input was invalid. Since the Farmers Almanac had a built-in error message for URLs with invalid year and location input, I could use that to detect errors and then code my own error message.
 
@@ -182,8 +187,8 @@ We can then check whether the Scraper.all array is empty in order to print an er
 
 This approach was very efficient in that I did not need to code all of the criteria for a valid year or zip code, but instead could rely on the website, which was already accounting for all of those details internally.
 
-*3. The data in a CLI application will always be limited by the quality of the original source data.
-*
+**3. The data in a CLI application will always be limited by the quality of the original source data.**
+
 
 After careful consideration ([see blog post](https://jessesbyers.github.io/to_scrape_or_not_to_scrape)), I decided to scrape my data from the Old Farmer's Almanac Weather History site rather than from an API. The primary reason for this decision was that I wanted to make it as simple as possible for a user to input their location, and it was the best choice in that regard. The APIs that I explored were limited in that searches were made primarily by weather station, but not all weather stations collected the necessary data for my program. 
 
@@ -205,5 +210,8 @@ Since my application was designed for craft projects, the user-friendlyness of t
 **Want to check out my project to learn more?**
 
 [Explore the project on gihub at this link](https://github.com/jessesbyers/climate_pattern_generator/tree/master)
+
 * Use the **master branch** to see the full version (full year of data, taking 20 minutes to generate a knitting pattern)
+
+
 * Use the **demo branch** to see the demo version (see all features within a few seconds, with fewer days of data)
