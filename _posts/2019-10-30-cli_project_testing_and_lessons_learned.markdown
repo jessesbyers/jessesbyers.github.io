@@ -15,6 +15,8 @@ permalink:  cli_project_testing_and_lessons_learned
 
 * Use the **demo branch** to see the demo version (see all features within a few seconds, with fewer days of data)
 
+[Watch a 5-minute video walkthrough of the project](https://drive.google.com/file/d/1Vr0Tn5F0dY53nAS5vUcmr_hl9t8AayLx/view?usp=sharing)
+
 
 # Climate Pattern Generator
 I successfully created a CLI application that would automatically generate a knitting pattern using weather data from a location and year chosen by the user. Here's how it works:
