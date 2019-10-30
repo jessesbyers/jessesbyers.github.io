@@ -194,7 +194,7 @@ This approach was very efficient in that I did not need to code all of the crite
 
 After careful consideration ([see blog post](https://jessesbyers.github.io/to_scrape_or_not_to_scrape)), I decided to scrape my data from the Old Farmer's Almanac Weather History site rather than from an API. The primary reason for this decision was that I wanted to make it as simple as possible for a user to input their location, and it was the best choice in that regard. The APIs that I explored were limited in that searches were made primarily by weather station, but not all weather stations collected the necessary data for my program. 
 
-The Old Farmer's Almanac eliminated this issue, but was a second-hand source of data. As a result, I found several irregularities that likely resulted from the transfer of data from the original source, the National Climatic Data Ceter, to the Farmer's Almanac (such as a reported 999 mph wind gust, or many instances of missing data points).  I decided to detect whether data was missing on a particular day, and reassign the remaining data attributes from that day, because those were the days that tended to have the inconsistencies in the data.
+The Old Farmer's Almanac eliminated this issue, but was a second-hand source of data. As a result, I found several irregularities that likely resulted from the transfer of data from the original source, the National Climatic Data Center, to the Farmer's Almanac (such as a reported 999 mph wind gust, or many instances of missing data points).  I decided to detect whether data was missing on a particular day, and reassign the remaining data attributes from that day, because those were the days that tended to have the inconsistencies in the data.
 
 ```
     if self.max_temp == "No data."
