@@ -1,17 +1,14 @@
 ---
 layout: post
 title:      "Bird Log: My First Sinatra Project"
-date:       2019-12-17 19:33:03 +0000
+date:       2019-12-17 14:33:04 -0500
 permalink:  bird_log_my_first_sinatra_project
 ---
 
 
-
-<a href="https://imgur.com/57Iovui"><img src="https://i.imgur.com/57Iovuil.png" title="source: imgur.com" /></a>
-
-
 I created Bird Log, a bird watching web app, for my first Sinatra Project. You can check it out on github [here](https://github.com/jessesbyers/bird_log) and watch a  video walkthrough [here](https://drive.google.com/file/d/1fCaFbrCTTwZXgaMz6NLF7vbsmQyA0lUf/view?usp=sharing). 
 
+<a href="https://imgur.com/57Iovui"><img src="https://i.imgur.com/57Iovuil.png" title="source: imgur.com" /></a>
 
 ## Process
 My goal was to create a fully-functioning CRUD app in 5 working days. Looking back to my CLI project, I had a lot of time, and as a result, was not as focused in my programming as I could have been. This time around,  I limited myself to five eight-hour days so that I could focus on efficiency and making continuous forward progress. In the end, I think these constraints helped make me a more purposeful programmer.
