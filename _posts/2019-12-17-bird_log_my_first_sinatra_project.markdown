@@ -29,11 +29,11 @@ Next, I created my repository on github and focused on building out a file struc
 Next, I created the application controller and the controllers for each model. Most of this time was spent focused on the users controller to ensure that users could sign up for and log into secure accounts.
 
 #### Afternoon: Views and Testing 
-I drafted some very rudimentary views for each model. Most views just included directions to myself on what content would eventually live there, and who would be able to access it. This step allowed me to start testing the routesand redirects in each controller. By this point, I could log in, create content, and navigate between screens. The morning was spent testing features using pry, tux, and shotgun; finding and fixing bugs; and solidifying user permissions for each route and view.
+I drafted some very rudimentary views for each model. Most views just included directions to myself on what content would eventually live there, and who would be able to access it. This step allowed me to start testing the routesand redirects in each controller. By this point, I could log in, create content, and navigate between screens. I tested features and object relationships using pry, tux, and shotgun; uncovered and fixed some bugs; and solidified user permissions for each route and view.
 
 ### DAY 3
 #### Morning: Testing, Sharing and  Feedback 
-Amazingly, after 3 days of work, I had a fairly functional CRUD app that I could share with a classmate. I shared my app and demonstrated the functions, and got some feedback and ideas on how to improve navigation and better secure some of the views for users. 
+At this point I had a fairly functional CRUD app that I could share with a classmate. I shared my app and demonstrated the functions, and got some feedback and ideas on how to improve navigation and better secure some of the views for users. 
 
 #### Afternoon:  Exporing CSS possibilities 
 Having never used CSS on a project before, I took some time to watch video walkthroughs on Grid and Flexbox and started to sketch out what each view should really look like. I decided to use Grid because of its flexibility, and planned to create a simple tile structure on each view page.
@@ -50,10 +50,10 @@ The bulk of this time was spent creating parent and child  containers in each vi
 
 ### DAY 5
 #### Morning: Final Testing,  Bug Fixes, and Formatting Details
-Finally, it was time to apply colors, fonts, and make tweaks on sizing of images and text. Along the way, I discovered a few minor bugs in buttons,  links, and routes and was able to fix these fairly quickly.
+This was finally the time to apply colors, fonts, and make tweaks on sizing of images and text. Along the way, I discovered a few minor bugs in buttons,  links, and routes and was able to fix these fairly quickly.
 
 #### Afternoon - Final Details 
-Finally, it was time to create my video walkthrough and write this blog post, and submit the project.
+I created my video walkthrough and write this blog post, and submitted the project.
 
 <a href="https://imgur.com/Pv1I1nK"><img src="https://i.imgur.com/Pv1I1nK.png" title="source: imgur.com" /></a>
 
@@ -65,7 +65,7 @@ The most important starting point for a project is modeling the associations bet
 Creating a secure site means more than just requiring a password. We need to use methods to secure routes as well as views. Sometimes, we just need to check whether a user is logged in, but at other times, we need to make sure a user is logged in, and that the current user is authorized to do actions on a particular resource.
 
 ### Styling
-There is most definitely an order of operations in styling a web application. At first I started thinking about colors and fonts, but quickly realized that those aspects should be designed after a basic layout is achieved. For my next project, I plan to use a CSS framework such as Bootstrap to further explore the possibilities in this area.
+There is most definitely an order of operations in styling a web application. At first I started thinking about colors and fonts, but quickly realized that those aspects should be designed after a basic layout is achieved. For my next project, I plan to use a CSS framework such as Bootstrap to further explore the possibilities in this area. I also learned the value of separating css stylesheets for each view, rather than putting them all in a single stylesheet.
 <a href="https://imgur.com/ej2hGzy"><img src="https://i.imgur.com/ej2hGzy.png" title="source: imgur.com" /></a>
 
 
