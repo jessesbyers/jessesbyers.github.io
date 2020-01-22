@@ -13,7 +13,7 @@ To illustrate how Rails CRUD actions work, I’ll use a simple Contact List app 
 
 ### A. Creating a New Rails App and Generating a Resource
 
-**1. Create a new Rails app** by typing rails new in the Terminal. This creates the basic file structure and dependencies needed for a Rails app. Run bundle install and you will be ready to start creating content for the Contact List App.
+**1. Create a new Rails app** by typing rails new in the Terminal. This creates the basic file structure and dependencies needed for a Rails app. 
 ```
  rails new contact_list 
 ```
