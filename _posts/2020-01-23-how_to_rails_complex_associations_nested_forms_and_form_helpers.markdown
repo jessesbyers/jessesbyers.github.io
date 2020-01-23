@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "How To...Rails: Complex Associations, Nested Forms, and Form Helpers"
+title:      "HOW TO...RAILS: Complex Associations, Nested Forms, and Form Helpers"
 date:       2020-01-23 14:28:35 -0500
 permalink:  how_to_rails_complex_associations_nested_forms_and_form_helpers
 ---
