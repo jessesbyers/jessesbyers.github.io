@@ -1,12 +1,12 @@
 ---
 layout: post
-title:      "HOW TO...RAILS: Basic CRUD, RESTful Routes, and Helper Methods "
+title:      "How To...Rails: Basic CRUD, RESTful Routes, and Helper Methods "
 date:       2020-01-16 10:55:25 -0500
 permalink:  how_to_rails_basic_crud_restful_routes_and_helper_methods
 ---
 
 
-*In this series of HOW TO posts, I will be summarizing the key points of essential topics and illustrating them with a simple example. I’ll briefly explain what each piece of code does and how it works. Stay tuned as I add more HOW TO posts in the series each week!*
+*In this series of How To posts, I will be summarizing the key points of essential topics and illustrating them with a simple example. I’ll briefly explain what each piece of code does and how it works. Stay tuned as I add more HOW TO posts in the series each week!*
 
 ## Contacts List Example 
 To illustrate how Rails CRUD actions work, I’ll use a simple Contact List app as an example. Imagine that a User has many Contacts and a Contact belongs to a User. Each Contact has a name, address, phone number, and email address (all string data types). This post will only focus on the code around the Contact Model, Views, and Controller.
@@ -100,5 +100,5 @@ The link_to and contact_path methods are used to create hyperlinks on the index 
 
 **9. Make this app more user-friendly and look presentable!** Add basic navigational links, including Edit and Delete buttons on the show page. Update the HTML and CSS to make it stylish, and you’ll have a simple Rails example that has all of the basic CRUD functions, RESTful Routing, and uses Helper Methods to keep the code clean and DRY.
 
-*Stay tuned for the next HOW TO: RAILS post next week!
+*Stay tuned for the next How To post next week!
 *
