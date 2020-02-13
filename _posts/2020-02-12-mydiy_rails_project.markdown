@@ -8,7 +8,7 @@ permalink:  mydiy_rails_project
 
 For my Rails Project assessment, I created a web application called MyDIY. You can watch a[ video walkthrough](https://drive.google.com/file/d/19It01i7Q-IBm-9QdxjmBwTnG8iEgDPvl/view?usp=sharing), and view it on [github](https://github.com/jessesbyers/MyDIY).
 
-> MyDIY is a collaborative project planning and blogging app for Do-It-Yourself-ers, House-Flippers, and Property Managers. Each User can work on mulitple projects and collaborate in different ways with other users. Users can create project goals, updates, resources, and post images as the work is being done. 
+> MyDIY is a collaborative project planning and blogging app for Do-It-Yourself-ers, House-Flippers, and Property Managers. Each User can work on multiple projects and collaborate in different ways with other users. Users can create project goals, updates, resources, and post images as their goals are being completed. 
 > 
 
 ## The Challenge
@@ -80,8 +80,9 @@ Collaboration is complex! Looking back at the project, knowing what I know now, 
 
 2. I would explore using a gem such as Can Can Can to help manage user roles and privileges. While I learned a lot through creating the roles manually, I did spend the majority of my project time figuring out the ins and outs of access restrictions, testing, fixing bugs, and re-testing.
 
-3. While refactoring code will often make it cleaner and easier to read, there is a point at which too much refactoring makes the code harder to read. It is important to strike the right balance in order to write clean code that is also highly understandable.
-4. Testing User roles and privileges is very time-consuming and needs to be done repeatedly to make sure there are no unintended consequences of changing the code to address a particular bug. This is a case in which Capybara feture tests could be very useful, and I would like to explore these tests more so I could implement them the next time I develop a project that relies on collaborative relationships.
+3. While refactoring code will often make it cleaner and easier to read, there is a point at which too much refactoring makes the code harder to understand. It is important to strike the right balance in order to write clean code that is also highly understandable by other programmers who might work on your project in the future.
+
+4. Testing user roles and privileges is very time-consuming and needs to be done repeatedly to make sure there are no unintended consequences of changing the code to address a particular bug. This is a case in which Capybara Feature Tests could be very useful, and I would like to explore these tests more so I could implement them the next time I develop a project that relies on collaborative relationships.
 
 All in all, I loved building the project and working through the challenge of incorporating user roles and collaborations. I look forward to using MyDIY for my own home projects, and hope you'll check it out too! You can watch a[ video walkthrough](https://drive.google.com/file/d/19It01i7Q-IBm-9QdxjmBwTnG8iEgDPvl/view?usp=sharing), and view it on [github](https://github.com/jessesbyers/MyDIY).
 
