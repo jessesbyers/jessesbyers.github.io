@@ -84,7 +84,7 @@ Each type of object has a constructor function which allows construction of new 
 ```
 This creates a map centered on North America, with a zoom level allowing us to view the entire continent.
 
-#### Constructors for Maps, Markers, and Info Windows
+#### Constructors for Markers, and Info Windows
 
 ```
         let obsMarker = new google.maps.Marker({
