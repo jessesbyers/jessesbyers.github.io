@@ -84,7 +84,7 @@ Each type of object has a constructor function which allows construction of new 
 ```
 This creates a map centered on North America, with a zoom level allowing us to view the entire continent.
 
-#### Constructors for Markers, and Info Windows
+#### Constructors for Markers and Info Windows
 
 ```
         let obsMarker = new google.maps.Marker({
@@ -147,7 +147,12 @@ This example shows how I paired a traditional event listener (clicking on the "A
 
 
 ### Object Oriented Javascript Frontend
-I organized the frontend across two classes, ObservationsAdapter and Observation. The adapter class is responsible for all communication between the frontend and backend, and includes all of the functions related to fetching data. 
+I organized the frontend across two classes, ObservationsAdapter and Observation. 
+
+The observation class is responsible for building and rendering markers and info windows using data retrieved from the user or from the database.
+
+The adapter class is responsible for all communication between the frontend and backend, and includes all of the functions related to fetching data. 
+
 * A GET fetch request is used to populate the map with all observations from the database when the view button is clicked.
 ```
     fetchObservations(map) {
