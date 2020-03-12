@@ -72,7 +72,7 @@ This application relies heavily on the Google Maps Javascript API for the fronte
 
 To integrate the maps API, I needed to add a script to the bottom of the body of my index.html file. This script made a connection to the google maps API, included my access key, and included a callback to the initMap() function which would set up my base map.
 ```
-    <script id="api" async defer src="https://maps.googleapis.com/maps/api/js?key=##############I&callback=initMap"
+    <script id="api" async defer src="https://maps.googleapis.com/maps/api/js?key=###I&callback=initMap"
     type="text/javascript"></script>
 ```
 
@@ -126,27 +126,98 @@ Beyond these constructors, I also used google's built-in setter and getter metho
 ```
 Within this function, the setDraggable() setter method is used to make the marker draggable when creating a new observation for the map, and uses the setIcon() method to change the marker icon from the default shape to a pushpin shape. The getPosition() getter method is used to then collect the exact latitude and longitude coordinates from the pushpin placeholder marker, so they can be stored in an array and later used in the post request to the backend while creating a new observation entry in the database.
 
+![Imgur](https://i.imgur.com/ijIcEAc.png)
+
 #### Event Listeners and Events
 Finally, the goole maps API includes many event listeners and events that are similar to vanilla JavaScript events. Since many users are accustomed to using clicks, double clicks, and drags to navigate a map on any site, I needed to carefully plan out how to enable and disable event listeners so that my custom events for adding and deleting database entries were not conflicting with regular google map navigation events.
 ```
     addObs.addEventListener('click', function() { 
         addObs.disabled = true
         alert("Click on a location on the map to add a new observation.");
-        // Event listener to place marker on map with click on location
-        let addMarkerListener = map.addListener('click', function(e) {
+
+         let addMarkerListener = map.addListener('click', function(e) {
             Observation.placeMarker(e.latLng, map);
-            // Remove event listener so only one marker can be added at a time
             google.maps.event.removeListener(addMarkerListener)
         });
     })
 ```
 This example shows how I paired a traditional event listener (clicking on the "Add" navbar button) with a google map listener in order to allow users to add a marker to the map as well as add the data to the database. At the end of the function, the event listener is removed to re-enable the default google maps behavior.
 
+![Imgur](https://i.imgur.com/fYv98si.png)
+
 
 ### Object Oriented Javascript Frontend
+I organized the frontend across two classes, ObservationsAdapter and Observation. The adapter class is responsible for all communication between the frontend and backend, and includes all of the functions related to fetching data. 
+* A GET fetch request is used to populate the map with all observations from the database when the view button is clicked.
+```
+    fetchObservations(map) {
+        fetch(this.baseURL)
+            .then(response => response.json())
+            .then(json => {
+                let observations = json.data
+
+                observations.forEach(obs => {
+                    let observation = new Observation(obs.id, obs.attributes.name, obs.attributes.description, obs.attributes.category_id, obs.attributes.latitude, obs.attributes.longitude)
+                    observation.renderMarker(map)
+                })
+            })
+    }
+```
+* A POST fetch request is used to send user-input to the create action in the Observations Controller, which is then used to create and persist an observation instance in the database.
+```
+    addMarkerToDatabase(newObservation, map) {
+
+        let configObj = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify(newObservation)
+        };
+
+        fetch(this.baseURL, configObj)
+            .then(function(response) {
+                return response.json()
+            })
+            .then(json => {
+                let obs = json.data
+                let observation = new Observation(obs.id, obs.attributes.name, obs.attributes.description, obs.attributes.category_id, obs.attributes.latitude, obs.attributes.longitude)
+                observation.renderMarker(map)
+            })
+            .catch(function(error) {
+                alert("ERROR! Please Try Again");
+                console.log(error.message);
+            });
+    }
+```
+* A DELETE fetch request is used to delete an individual observation instance from the database when a user clicks on the marker label for the corresponding observation id.
+```
+    removeObsFromDatabase(marker) {
+        let id = parseInt(marker.label.text)
+        
+        markersArray.map(marker => {
+            google.maps.event.clearListeners(marker, 'dblclick')
+        })
+    
+        let configObj = {
+            method: "DELETE",
+            headers: 
+                {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+                },
+        };
+        
+        fetch(`${this.baseURL}/${id}`, configObj) 
+        .then(function(json) {
+            marker.setVisible(false)
+            marker.setMap(null)
+        })
+    }
+```
 
 
-### Communication Between the Frontend and Backend
 
 ## Future Enhancements
 While this project has succeeded in delivering the functionality needed for the public to report water quality observations, more work needs to be done to make it a fully-functioning application. In the future, I would like to add the following features:
