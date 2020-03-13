@@ -16,7 +16,7 @@ permalink:  watershed_monitor_javascript_and_rails_project
 This project required me to create a Single Page Application with a Rails API Backend and JavaScript Frontend. All communication between the frontend and backend was required to happen asynchronously through AJAX with data communicated in JSON format. It needed to organize data through JavaScript Objects and Classes, include a has many relationship, and  include at least 3 AJAX calls using fetch to complete CRUD actions. I fulfilled these requirements by integrating the Google Maps Javascript API so that users could use an interactive map interface in order to more easily input geographic data and view data without having to worry about latitude and longitude coordinates.
 
 ### Rails API Backend
-The Rails component of this project is very straightforward. There is a Category model and an Observation model, and each Category has many Observations, and each Observations belongs to a Category. The Category model allows for easy organization and filtering of the data by category, and users primarily interact with the Observation model.
+The Rails component of this project is very straightforward. There is a Category model and an Observation model, and each Category has many Observations, and each Observation belongs to a Category. The Category model allows for easy organization and filtering of the data by category, and users primarily interact with the Observation model.
 
 ```
 class ObservationsController < ApplicationController
@@ -129,7 +129,7 @@ Within this function, the setDraggable() setter method is used to make the marke
 ![Imgur](https://i.imgur.com/ijIcEAc.png)
 
 #### Event Listeners and Events
-Finally, the goole maps API includes many event listeners and events that are similar to vanilla JavaScript events. Since many users are accustomed to using clicks, double clicks, and drags to navigate a map on any site, I needed to carefully plan out how to enable and disable event listeners so that my custom events for adding and deleting database entries were not conflicting with regular google map navigation events.
+Finally, the Google Maps JavaScriptAPI includes many event listeners and events that are similar to vanilla JavaScript events. Since many users are accustomed to using clicks, double clicks, and drags to navigate a map on any site, I needed to carefully plan out how to enable and disable event listeners so that my custom events for adding and deleting database entries were not conflicting with regular google map navigation events.
 ```
     addObs.addEventListener('click', function() { 
         addObs.disabled = true
