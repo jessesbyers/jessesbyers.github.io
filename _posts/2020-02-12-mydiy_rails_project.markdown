@@ -6,8 +6,7 @@ permalink:  mydiy_rails_project
 ---
 
 
-*MyDIY is a collaborative project planning and blogging app for Do-It-Yourself-ers, House-Flippers, and Property Managers. Each User can work on multiple projects and collaborate in different ways with other users. Users can create project goals, updates, resources, and post images as their goals are being completed. 
-*
+*MyDIY is a collaborative project planning and blogging app for Do-It-Yourself-ers, House-Flippers, and Property Managers. Each User can work on multiple projects and collaborate in different ways with other users. Users can create project goals, updates, resources, and post images as their goals are being completed. *
 
 [Check it out on Github](https://github.com/jessesbyers/MyDIY) and [ Watch a video walkthrough](https://drive.google.com/file/d/19It01i7Q-IBm-9QdxjmBwTnG8iEgDPvl/view?usp=sharing).
 
