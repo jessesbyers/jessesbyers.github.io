@@ -6,10 +6,10 @@ permalink:  mydiy_rails_project
 ---
 
 
-For my Rails Project assessment, I created a web application called MyDIY. You can watch a[ video walkthrough](https://drive.google.com/file/d/19It01i7Q-IBm-9QdxjmBwTnG8iEgDPvl/view?usp=sharing), and view it on [github](https://github.com/jessesbyers/MyDIY).
+*MyDIY is a collaborative project planning and blogging app for Do-It-Yourself-ers, House-Flippers, and Property Managers. Each User can work on multiple projects and collaborate in different ways with other users. Users can create project goals, updates, resources, and post images as their goals are being completed. 
+*
 
-> MyDIY is a collaborative project planning and blogging app for Do-It-Yourself-ers, House-Flippers, and Property Managers. Each User can work on multiple projects and collaborate in different ways with other users. Users can create project goals, updates, resources, and post images as their goals are being completed. 
-> 
+[Check it out on Github](https://github.com/jessesbyers/MyDIY) and [ Watch a video walkthrough](https://drive.google.com/file/d/19It01i7Q-IBm-9QdxjmBwTnG8iEgDPvl/view?usp=sharing).
 
 ## The Challenge
 The requirements for this project were significant, and required managing complex relationships and nested forms and resources. It was fairly easy to build in the required associations, however, the main challenges I encountered were related to setting up and managing collaborations amongst users and managing different levels of privileges based on a user's role.
@@ -84,7 +84,9 @@ Collaboration is complex! Looking back at the project, knowing what I know now, 
 
 4. Testing user roles and privileges is very time-consuming and needs to be done repeatedly to make sure there are no unintended consequences of changing the code to address a particular bug. This is a case in which Capybara Feature Tests could be very useful, and I would like to explore these tests more so I could implement them the next time I develop a project that relies on collaborative relationships.
 
-All in all, I loved building the project and working through the challenge of incorporating user roles and collaborations. I look forward to using MyDIY for my own home projects, and hope you'll check it out too! You can watch a[ video walkthrough](https://drive.google.com/file/d/19It01i7Q-IBm-9QdxjmBwTnG8iEgDPvl/view?usp=sharing), and view it on [github](https://github.com/jessesbyers/MyDIY).
+All in all, I loved building the project and working through the challenge of incorporating user roles and collaborations. I look forward to using MyDIY for my own home projects, and hope you'll check it out too! 
+
+[Check it out on Github](https://github.com/jessesbyers/MyDIY) and [ Watch a video walkthrough](https://drive.google.com/file/d/19It01i7Q-IBm-9QdxjmBwTnG8iEgDPvl/view?usp=sharing).
 
 
 
