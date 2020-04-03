@@ -1,12 +1,14 @@
 ---
 layout: post
-title:      "Bird Log: My First Sinatra Project"
+title:      "Bird Log: A Sinatra Project"
 date:       2019-12-17 14:33:04 -0500
 permalink:  bird_log_my_first_sinatra_project
 ---
 
 
-I created Bird Log, a bird watching web app, for my first Sinatra Project. You can check it out on github [here](https://github.com/jessesbyers/bird_log) and watch a  video walkthrough [here](https://drive.google.com/file/d/1fCaFbrCTTwZXgaMz6NLF7vbsmQyA0lUf/view?usp=sharing). 
+I created Bird Log, a bird watching web app, for my first Sinatra Project. 
+
+[Check it out on Github](https://github.com/jessesbyers/bird_log) and [Watch a video walkthrough](https://drive.google.com/file/d/1fCaFbrCTTwZXgaMz6NLF7vbsmQyA0lUf/view?usp=sharing). 
 
 <a href="https://imgur.com/57Iovui"><img src="https://i.imgur.com/57Iovui.png" title="source: imgur.com" /></a>
 ## Process
@@ -77,6 +79,8 @@ Since I finished this project early, my plan is to create a second Sinatra proje
 3. Reformat Sign Up and Log In pages to be more visually appealing.
 4. Vertically align all images in the grid.
 5. Make the app responsive for mobile devices.
+
+[Check it out on Github](https://github.com/jessesbyers/bird_log) and [Watch a video walkthrough](https://drive.google.com/file/d/1fCaFbrCTTwZXgaMz6NLF7vbsmQyA0lUf/view?usp=sharing). 
 
 
 
