@@ -1,21 +1,21 @@
 ---
 layout: post
-title:      "CLI Project: Testing and Lessons Learned"
+title:      "Climate Pattern Generator: Testing and Lessons Learned"
 date:       2019-10-30 08:34:21 -0400
 permalink:  cli_project_testing_and_lessons_learned
 ---
 
 
-*In my last blog post, "[To Scrape, or not to Scrape](https://jessesbyers.github.io/to_scrape_or_not_to_scrape)", I laid out the plan for my first Command Line Application project and the challenges I encountered in accessing daily weather data for an entire year. This post will update how the project has come together, and share some of the lessons learned from testing and troubleshooting the program.*
+*In my last blog post, "[To Scrape, or not to Scrape](https://jessesbyers.github.io/to_scrape_or_not_to_scrape)", I laid out the plan for my first Command Line Interface application project and the challenges I encountered in accessing daily weather data for an entire year. This post will update how the project has come together, and share some of the lessons learned from testing and troubleshooting the program.*
 
-[Explore the project on gihub at this link](https://github.com/jessesbyers/climate_pattern_generator/tree/master)
+[Explore the project on Github](https://github.com/jessesbyers/climate_pattern_generator/tree/master) and [Watch a 5-minute video walkthrough of the project](https://drive.google.com/file/d/1Vr0Tn5F0dY53nAS5vUcmr_hl9t8AayLx/view?usp=sharing).
 
 * Use the **master branch** to see the full version (full year of data, taking 20 minutes to generate a knitting pattern)
 
 
 * Use the **demo branch** to see the demo version (see all features within a few seconds, with fewer days of data)
 
-[Watch a 5-minute video walkthrough of the project](https://drive.google.com/file/d/1Vr0Tn5F0dY53nAS5vUcmr_hl9t8AayLx/view?usp=sharing)
+
 
 
 # Climate Pattern Generator
@@ -211,7 +211,7 @@ Since my application was designed for craft projects, the user-friendlyness of t
 
 **Want to check out my project to learn more?**
 
-[Explore the project on gihub at this link](https://github.com/jessesbyers/climate_pattern_generator/tree/master)
+[Explore the project on Github](https://github.com/jessesbyers/climate_pattern_generator/tree/master) and [Watch a 5-minute video walkthrough of the project](https://drive.google.com/file/d/1Vr0Tn5F0dY53nAS5vUcmr_hl9t8AayLx/view?usp=sharing).
 
 * Use the **master branch** to see the full version (full year of data, taking 20 minutes to generate a knitting pattern)
 
