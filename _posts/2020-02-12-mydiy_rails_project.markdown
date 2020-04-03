@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "MyDIY Rails Project "
+title:      "MyDIY: Rails Project "
 date:       2020-02-12 20:27:43 -0500
 permalink:  mydiy_rails_project
 ---
