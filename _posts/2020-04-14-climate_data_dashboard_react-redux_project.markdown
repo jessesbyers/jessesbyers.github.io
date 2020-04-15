@@ -10,7 +10,7 @@ permalink:  climate_data_dashboard_react-redux_project
 
 ![Imgur](https://i.imgur.com/Hqz3QMC.png)
 
-[Check out the project on Github](https://github.com/jessesbyers/climate-data-dashboard-frontend) and Watch a video walkthrough.
+[Check out the project on Github](https://github.com/jessesbyers/climate-data-dashboard-frontend) and [Watch a video walkthrough](https://drive.google.com/file/d/1IVsYRaElQui7Se3lXT8yAWIy3wBS149a/view?usp=sharing).
 
 ## Project Overview
 This project was created with a Ruby on Rails backend API which manages all of the teacher and student data related to the charts and observations (notices) and questions (or wonders). The frontend was created as a React-Redux application using React-Router to manage RESTful routing and Thunk to manage asynchronous fetch actions. 
@@ -249,7 +249,7 @@ You can see all of the final reducers [here](https://github.com/jessesbyers/clim
 ## Lessons Learned
 Needless to say, this refactoring of my working code was a significant time investment, but it was clear that it needed to be done. I had created a lot of extra work by having an overly complicated nested state structure, and it really didn't gain me any efficiency in my containers and components. Simple state structures are definitely the way to go. That said, working through thew challenge of writing reducer logic with a deeply nested initial state was a tremendous learning opportunity for me. My understanding of the spread operator was shaky before tackling this project, and I had to work through multiple instances of breaking apart data and putting it back together again. I refined my debugging skills and developed a sound process for examining the return values of each action. Both of these skills will certainly come in handy in the future...but not while tackling a deeply nested state. I will definitely be using simple states and combining reducers from now on!
 
-[Check out the project on Github](https://github.com/jessesbyers/climate-data-dashboard-frontend) and Watch a video walkthrough.
+[Check out the project on Github](https://github.com/jessesbyers/climate-data-dashboard-frontend) and [Watch a video walkthrough](https://drive.google.com/file/d/1IVsYRaElQui7Se3lXT8yAWIy3wBS149a/view?usp=sharing).
 
 
 
