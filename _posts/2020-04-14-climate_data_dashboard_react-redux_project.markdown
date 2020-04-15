@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Climate Data Dashboard: React-Redux Project"
-date:       2020-04-14 23:59:17 +0000
+date:       2020-04-14 19:59:18 -0400
 permalink:  climate_data_dashboard_react-redux_project
 ---
 
