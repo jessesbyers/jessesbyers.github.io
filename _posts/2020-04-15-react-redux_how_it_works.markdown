@@ -150,7 +150,7 @@ React has a collection of methods called Lifecycle methods that enable component
 
 Similarly, we can use other lifecycle methods during the updating and unmounting phase, but I did not need to use any others in this app.
 
-## Redux (coming soon!!!)
+## Redux
 
 ### What is Redux? How does it work with React?
 Redux is a code library that works within React to manage state scross the entire application. At its core, it allows us to represent the state for our application as a single JavaScript object, that can be accessed by any component it is connected to and whose values can be accessed  using typical methods for accessing values in objects and arrays. 
