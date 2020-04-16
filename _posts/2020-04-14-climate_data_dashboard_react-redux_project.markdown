@@ -251,6 +251,8 @@ Needless to say, this refactoring of my working code was a significant time inve
 
 [Check out the project on Github](https://github.com/jessesbyers/climate-data-dashboard-frontend) and [Watch a video walkthrough](https://drive.google.com/file/d/1IVsYRaElQui7Se3lXT8yAWIy3wBS149a/view?usp=sharing).
 
+Want to learn more about how the project works under the hood? Check out my second blog post about the project: [React-Redux: How it Works](https://jessesbyers.github.io/react-redux_how_it_works).
+
 
 
 
