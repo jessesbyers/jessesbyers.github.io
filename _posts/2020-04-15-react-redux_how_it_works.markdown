@@ -401,7 +401,7 @@ export default function chartsReducer(state = [], action) {
 }
 ```
 
-Well, that should just about cover the basics. I hope rading this review is as helpful to you as it was for me writing it.
+Well, that should just about cover the basics! I hope reading this review is as helpful to you as it was for me writing it.
 
 Again, if you want to learn more about the project and see it in action:
 * [Check out the project on Github](https://github.com/jessesbyers/climate-data-dashboard-frontend) and [Watch a video walkthrough](https://drive.google.com/file/d/1IVsYRaElQui7Se3lXT8yAWIy3wBS149a/view?usp=sharing).
